@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>URL generation</title>
+	<link rel="stylesheet" type="text/css" href="urlgen.css">
+	<script type="text/javascript" src="urlgen.js"></script>
+</head>
+<body>
+	<div class="left">
+		Enter the search text:
+		<br><br>
+		Choose a domain name:
+		<br><br>
+		Security option:
+
+	</div>
+	
+	<div class="right">
+		<input type="text" size="50" id="urlText" /><span id="errorText"></span>
+		<br><br>
+		<select id="dropDown">
+		<option value="google.com">google.com</option>
+		<option value="yahoo.com">yahoo.com</option>
+		<option value="bing.com">bing.com</option>
+		</select>
+		<br><br>
+		<input type="radio" name="security" value="Secure" id="rad1">Secure
+		<input type="radio" name="security" value="Not secure">Not secure
+		
+	</div>
+	<br>
+	<button class="btn" onclick="urlGen()">Generate</button>
+	<p style="visibility: hidden;" id="infoText">Please click on the link below to see the result page...</p>
+	<a href="" id="myLink"><span id="result"></span></a>
+</body>
+</html>
